@@ -165,7 +165,7 @@
 <p><img src="https://phpvirtualbox.github.io/images/advvmmmenu.png"/></p>
 <h2 id="virtual-media-manager-additional-buttons">Virtual Media Manager additional buttons</h2>
 <p>The Virtual Media Manager has additional buttons that will allow you to perform additional actions.</p>
-<p><img src="./attachment/advvmmbuttons.png"/></p>
+<p><img src="https://phpvirtualbox.github.io/images/advvmmbuttons.png"/></p>
 <h3 id="new">New</h3>
 <p>Opens the New Hard Disk wizard</p>
 <h3 id="add">Add</h3>
