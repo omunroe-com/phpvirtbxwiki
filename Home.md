@@ -144,7 +144,7 @@
 <h4 id="other-oss">Other OSs</h4>
 <ul>
 <li>Download the latest version of phpVirtualBox from the Files tab</li>
-<li>Unzip the downloaded file and copy the resulting files / folders to a folder accessible by your <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Web%20server%20and%20PHP%20installation/">web server</a></li>
+<li>Unzip the downloaded file and copy the resulting files / folders to a folder accessible by your <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Web-server-and-PHP-installation">web server</a></li>
 </ul>
 <h4 id="selinux-considerations">SELinux Considerations</h4>
 <p>If SELinux is installed and you would like to keep it enabled, you may have to add a rule for vboxwebsrv.</p>
@@ -176,19 +176,19 @@
 <p>The username and password must be the username and password of the user that vboxwebsrv is running as. If VirtualBox and phpVirtualBox are on the same physical host, you may leave the $location setting alone. Once this is configured:</p>
 <ul>
 <li>Navigate to the resulting folder in your web browser. Typically <a href="http://your.web.server.ip/phpvirtualbox" rel="nofollow">http://your.web.server.ip/phpvirtualbox</a></li>
-<li>Default login is admin / admin. See <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Authentication%20in%20phpVirtualBox/">Authentication in phpVirtualBox</a> for more information on controlling users and passwords within phpVirtualBox.</li>
+<li>Default login is admin / admin. See <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Authentication-in-phpVirtualBox">Authentication in phpVirtualBox</a> for more information on controlling users and passwords within phpVirtualBox.</li>
 </ul>
-<p>If you have any trouble, see the <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Common%20phpVirtualBox%20Errors%20and%20Issues/">Common Errors and Issues</a> wiki page.</p>
+<p>If you have any trouble, see the <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Common-phpVirtualBox-Errors-and-Issues">Common Errors and Issues</a> wiki page.</p>
 <h3 id="advanced-configuration">Advanced configuration</h3>
 <p>Other configuration options and settings are well documented in config.php itself. More help can be found at:</p>
 <ul>
-<li><a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Authentication%20Modules/">Using External Authentication</a></li>
-<li><a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Custom%20VM%20Icons/">Enabling Custom VM Icons</a></li>
-<li><a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Advanced%20Settings/">Enabling Advanced Settings in phpVirtualBox</a></li>
-<li><a class="" href="http://sourceforge.net/p/phpvirtualbox/wiki/Multiple%20Server%20Configuration/">Multiple Server Configuration</a></li>
+<li><a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Authentication-Modules">Using External Authentication</a></li>
+<li><a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Custom-VM-Icons">Enabling Custom VM Icons</a></li>
+<li><a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Advanced-Settings">Enabling Advanced Settings in phpVirtualBox</a></li>
+<li><a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Multiple-Server-Configuration">Multiple Server Configuration</a></li>
 </ul>
 <h1 id="getting-help">Getting Help</h1>
-<p>Please see the <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Common%20phpVirtualBox%20Errors%20and%20Issues/">Common Errors and Issues</a> wiki page first!</p>
+<p>Please see the <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Common-phpVirtualBox-Errors-and-Issues">Common Errors and Issues</a> wiki page first!</p>
 <p>If your error or issue is not listed, please use the <a class="" href="https://sourceforge.net/p/phpvirtualbox/discussion/">Forums</a>.</p>
 <p>Please do not open a Bug report unless it is identified as a bug by a project member.</p>
 <h1 id="upgrading-phpvirtualbox">Upgrading phpVirtualBox</h1>
@@ -213,7 +213,7 @@
 </pre></div>
 
 
-<p>If your VirtualBox host is running Linux, please see: <a href="http://sourceforge.net/p/phpvirtualbox/wiki/vboxweb-service%20Configuration%20in%20Linux/">http://sourceforge.net/p/phpvirtualbox/wiki/vboxweb-service%20Configuration%20in%20Linux/</a> for a new-and-improved startup script configuration.</p>
+<p>If your VirtualBox host is running Linux, please see: <a href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/vboxweb-service-Configuration-in-Linux">vboxweb-service Configuration in Linux</a> for a new-and-improved startup script configuration.</p>
 <p>Then, start vboxwebsrv. If you are now using the vboxweb-service script described in the above link, you may run:</p>
 <div class="codehilite"><pre><span></span>/etc/init.d/vboxweb-service start
 </pre></div>
@@ -229,7 +229,7 @@
 <li>Български (България)        bg</li>
 <li>Català      ca</li>
 <li>Català (valencià)   ca_VA</li>
-<li>Čeština     cs</li>
+<li><s>Čeština     cs</s></li>
 <li>Dansk       da</li>
 <li><s>Deutsch     de</s></li>
 <li>Ελληνικά    el</li>
