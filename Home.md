@@ -125,7 +125,7 @@
 
 <p>Running /usr/bin/vboxwebsrv or not running the command from within /Applications/VirtualBox.app/Contents/MacOS seems to crash vboxwebsrv</p>
 <h2 id="installing-phpvirtualbox">Installing phpVirtualBox</h2>
-<p>phpVirtualBox requires a web server with PHP &gt;= 5.1.0 installed in order to run. If you do not already have a PHP-capable web server running, <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Web%20server%20and%20PHP%20installation/">this</a> may help you get started.</p>
+<p>phpVirtualBox requires a web server with PHP &gt;= 5.1.0 installed in order to run. If you do not already have a PHP-capable web server running, <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Web-server-and-PHP-installation">Web server and PHP Installation</a> may help you get started.</p>
 <hr/>
 <h3 id="download-and-installation">Download and Installation</h3>
 <h4 id="freebsd-note">FreeBSD Note</h4>
