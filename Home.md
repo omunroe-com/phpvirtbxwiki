@@ -98,7 +98,7 @@
 
 <p>If the first line contains "OSE" (e.g. Oracle VM VirtualBox web service version x.x.x_OSE), you are running the OSE version of VirtualBox.</p>
 <h3 id="linux">Linux</h3>
-<p>Linux users should use the instructions for vboxweb-service found at <a href="https://sourceforge.net/p/phpvirtualbox/wiki/vboxweb-service%20Configuration%20in%20Linux/">https://sourceforge.net/p/phpvirtualbox/wiki/vboxweb-service%20Configuration%20in%20Linux/</a></p>
+<p>Linux users should use the instructions for vboxweb-service found at <a href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/vboxweb-service-Configuration-in-Linux">vboxweb-service Configuration in Linux</a></p>
 <h3 id="solaris">Solaris</h3>
 <p>Assuming your VirtualBox installation is run by the user <em>vbox</em> and vboxwebsrv is located in /opt/VirtualBox, you may start vboxwebsrv by running the following command as <em>vbox</em>:</p>
 <div class="codehilite"><pre><span></span> /opt/VirtualBox/vboxwebsrv -H 127.0.0.1 -b --logfile /dev/null &gt;/dev/null
