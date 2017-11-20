@@ -113,7 +113,8 @@
 
 
 <p>Note that <em>&gt;nul</em> is needed so that vboxwebsrv does not send its output to the command prompt window. Without it, performance will be severely degraded.</p>
-<p>User-contributed documentation on setting up vboxwebsrv.exe to start when your computer boots can be found <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Windows%207%20-%202008%20%2B%20Service/">here</a>.</p>
+<p>User-contributed documentation on setting up vboxwebsrv.exe to start when your computer boots can be found <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Windows-7---2008---Service">Windows 7 2008 +
+ Service</a>.</p>
 <h3 id="os-x">OS X</h3>
 <p>In OS X, start Terminal (usually located in Applications -&gt; Utilities) and enter the following commands:</p>
 <div class="codehilite"><pre><span></span>  cd /Applications/VirtualBox.app/Contents/MacOS
