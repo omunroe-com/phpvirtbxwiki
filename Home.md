@@ -155,9 +155,8 @@
 
 <p>This will add the VirtualBox's web service port (18083) to be accessible by a service running in an http context (eg. apache).</p>
 <h4 id="arch-linux-considerations">Arch Linux Considerations</h4>
-<p>In Arch Linux, be sure to edit /etc/php/php.ini, and uncomment the following lines:</p>
-<div class="codehilite"><pre><span></span>;extension=json.so
-;extension=soap.so
+<p>In Arch Linux, be sure to edit /etc/php/php.ini, and uncomment the following line:</p>
+<div class="codehilite"><pre><span></span>;extension=soap.so
 </pre></div>
 
 
