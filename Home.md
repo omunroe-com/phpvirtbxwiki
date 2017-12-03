@@ -21,6 +21,7 @@
 <li><a href="#freebsd-note">FreeBSD Note</a></li>
 <li><a href="#other-oss">Other OSs</a></li>
 <li><a href="#selinux-considerations">SELinux Considerations</a></li>
+<li><a href="#arch-linux-considerations">Arch Linux Considerations</a></li>
 </ul>
 </li>
 <li><a href="#basic-configuration">Basic configuration</a></li>
@@ -83,7 +84,7 @@
 <p>If your web server and your VirtualBox installation are on 2 different hosts, you may need to add:</p>
 <p>-H IP.ADDRESS.OF.HOST</p>
 <p>to the command line of vboxwebsrv. Where IP.ADDRESS.OF.HOST is the IP address of your VirtualBox host, accessible by your web server. If this is not specified, vboxwebsrv will listen on localhost, which is not accessible outside of itself.</p>
-<h3 id="virtualbox-3x-ose-note">VirtualBox 3.x OSE Note</h3>
+<h3 id="virtualbox-3x-ose-note">VirtualBox 3.x OSE Note (OUTDATED -> move to )</h3>
 <p>For <em>VirtualBox 3.x OSE</em> users, you must execute the following command:</p>
 <div class="codehilite"><pre><span></span>   VBoxManage setproperty websrvauthlibrary null
 </pre></div>
@@ -138,6 +139,7 @@
 <div class="codehilite"><pre><span></span>pkg_add -r phpvirtualbox
 </pre></div>
 
+<p>Note that, as of December 2017, the FreeBSD port is forked from the release 5.0-5 of phpvirtualbox, waiting for a new upstream release.</p>
 
 <hr/>
 <h4 id="other-oss">Other OSs</h4>
@@ -153,7 +155,13 @@
 
 
 <p>This will add the VirtualBox's web service port (18083) to be accessible by a service running in an http context (eg. apache).</p>
+<h4 id="arch-linux-considerations">Arch Linux Considerations</h4>
+<p>In Arch Linux, be sure to edit /etc/php/php.ini, and uncomment the following line:</p>
+<div class="codehilite"><pre><span></span>;extension=soap.so
+</pre></div>
 
+
+<p>by removing the ';' at the beginning of each. Then restart apache.</p>
 <h3 id="basic-configuration">Basic configuration</h3>
 <p><strong><em>config.php</em></strong> in phpVirtualBox's folder on your web server tells phpVirtualBox how to communicate with your VirtualBox installation. To get started, rename config.php-example to config.php and edit it to reflect your settings. The minimal amount of configuration you will need is to specify the username and password needed, as well as the location of vboxwebsrv.</p>
 <div class="codehilite"><pre><span></span><span class="c">/* Username / Password for system user that runs VirtualBox */</span>
