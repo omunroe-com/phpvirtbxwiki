@@ -19,7 +19,6 @@
 <li><a href="#installing-phpvirtualbox">Installing phpVirtualBox</a><ul>
 <li><a href="#download-and-installation">Download and Installation</a><ul>
 <li><a href="#freebsd-note">FreeBSD Note</a></li>
-<li><a href="#other-oss">Other OSs</a></li>
 <li><a href="#selinux-considerations">SELinux Considerations</a></li>
 </ul>
 </li>
@@ -127,6 +126,16 @@
 <p>phpVirtualBox requires a web server with PHP &gt;= 5.1.0 installed in order to run. If you do not already have a PHP-capable web server running, <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Web-server-and-PHP-installation">Web server and PHP Installation</a> may help you get started.</p>
 <hr/>
 <h3 id="download-and-installation">Download and Installation</h3>
+
+<ul>
+<li>Download the latest version of phpVirtualBox <a href="https://github.com/phpvirtualbox/phpvirtualbox/archive/master.zip">here</a>.</li>
+<li>Unzip the downloaded file and copy the resulting files / folders to a folder accessible by your <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Web-server-and-PHP-installation">web server</a>.
+</li>
+<li>For Linux users, the downloaded zip file contains a configuration file named "phpvirtualbox.conf", which can be included in your apache configuration. It suppose that phpvirtualbox is installed in /usr/share/phpvirtualbox.</li>
+
+</ul>
+<p><b>Note :</b> If you want to test the phpvirtualbox develop branch, you can download it <a href="https://github.com/phpvirtualbox/phpvirtualbox/archive/develop.zip">here.</a></p>
+
 <h4 id="freebsd-note">FreeBSD Note</h4>
 <p>Thanks to Bernhard Fröhlich for his time and effort in creating the FreeBSD port.</p>
 <p>To install the port:</p>
@@ -140,12 +149,7 @@
 
 <p>Note that, as of December 2017, the FreeBSD port is forked from the release 5.0-5 of phpvirtualbox, waiting for a new upstream release.</p>
 
-<hr/>
-<h4 id="other-oss">Other OSs</h4>
-<ul>
-<li>Download the latest version of phpVirtualBox from the Files tab</li>
-<li>Unzip the downloaded file and copy the resulting files / folders to a folder accessible by your <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Web-server-and-PHP-installation">web server</a></li>
-</ul>
+
 <h4 id="selinux-considerations">SELinux Considerations</h4>
 <p>If SELinux is installed and you would like to keep it enabled, you may have to add a rule for vboxwebsrv.</p>
 <p>Install semanage (yum install policycoreutils-python) and run the command below:</p>
@@ -154,6 +158,8 @@
 
 
 <p>This will add the VirtualBox's web service port (18083) to be accessible by a service running in an http context (eg. apache).</p>
+
+<hr/>
 
 <h3 id="basic-configuration">Basic configuration</h3>
 <p><strong><em>config.php</em></strong> in phpVirtualBox's folder on your web server tells phpVirtualBox how to communicate with your VirtualBox installation. To get started, rename config.php-example to config.php and edit it to reflect your settings. The minimal amount of configuration you will need is to specify the username and password needed, as well as the location of vboxwebsrv.</p>
