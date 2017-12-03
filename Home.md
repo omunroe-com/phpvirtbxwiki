@@ -21,7 +21,6 @@
 <li><a href="#freebsd-note">FreeBSD Note</a></li>
 <li><a href="#other-oss">Other OSs</a></li>
 <li><a href="#selinux-considerations">SELinux Considerations</a></li>
-<li><a href="#arch-linux-considerations">Arch Linux Considerations</a></li>
 </ul>
 </li>
 <li><a href="#basic-configuration">Basic configuration</a></li>
@@ -155,13 +154,7 @@
 
 
 <p>This will add the VirtualBox's web service port (18083) to be accessible by a service running in an http context (eg. apache).</p>
-<h4 id="arch-linux-considerations">Arch Linux Considerations</h4>
-<p>In Arch Linux, be sure to edit /etc/php/php.ini, and uncomment the following line:</p>
-<div class="codehilite"><pre><span></span>;extension=soap.so
-</pre></div>
 
-
-<p>by removing the ';' at the beginning of each. Then restart apache.</p>
 <h3 id="basic-configuration">Basic configuration</h3>
 <p><strong><em>config.php</em></strong> in phpVirtualBox's folder on your web server tells phpVirtualBox how to communicate with your VirtualBox installation. To get started, rename config.php-example to config.php and edit it to reflect your settings. The minimal amount of configuration you will need is to specify the username and password needed, as well as the location of vboxwebsrv.</p>
 <div class="codehilite"><pre><span></span><span class="c">/* Username / Password for system user that runs VirtualBox */</span>
