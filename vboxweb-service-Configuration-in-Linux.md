@@ -1,5 +1,11 @@
-<div class="markdown_content"><p>On Linux systems, VirtualBox creates the init script <em>/etc/init.d/vboxweb-service</em> when it is installed. This can be used to start and stop vboxwebsrv. While there may be numerous ways to configure this script, this document aims to keep it simple.</p>
-<p>In order for vboxweb-service start vboxwebsrv, the file <em>/etc/default/virtualbox</em> must exist with correct settings. If this file does not exist on your system, create it now. This file has the format:</p>
+<div class="markdown_content"><p>On Linux systems, if you installed the official VirtualBox package (e.g. <a href="https://www.virtualbox.org/wiki/Linux_Downloads">frome here</a>), it created the init script<em> /etc/init.d/vboxweb-service</em> or a systemd service file<em> /lib/systemd/system/vboxweb-service.service</em>, depending on your service manager (init or systemd). These can be used to start and stop vboxwebsrv.</p>
+
+<p>In order to start vboxwebsrv, the file <em>/etc/default/virtualbox</em> must exist with correct settings.</p>
+
+<p><B>Note :</B> If you have installed the VirtualBox package provided with your Linux distribution, the init script or the systemd service file may have a different name or a different location. Moreover, if your Linux distribution use systemd as service manager, your vboxwebsrv systemd service file may ignore the file <em>/etc/default/virtualbox</em>. This is the case with the default systemd service file provided with Arch Linux or Ubuntu.</p>
+
+<p>While there may be numerous ways to configure vboxwebsrv, this document aims to keep it simple and suppose you installed the official VirtualBox package.
+If the file <em>/etc/default/virtualbox</em> does not exist on your system, create it now. This file has the format:</p>
 <div class="codehilite"><pre><span></span>SETTING1=value
 SETTING2=value
 </pre></div>
@@ -61,15 +67,20 @@ VBOXWEB_HOST=127.0.0.1
 </pre></div>
 
 
-<p>.. or <em>if your web server and vboxwebsrv are on NOT the same host</em>:</p>
+<p>.. or if your web server and vboxwebsrv are NOT on the same host:</p>
 <div class="codehilite"><pre><span></span>VBOXWEB_USER=remote_vbox
-VBOXWEB_HOST=192.168.0.4
+VBOXWEB_HOST=<em>192.168.0.4</em>
 </pre></div>
 
 
 <p>Note that these values are just examples. The user that runs virtual machines on your system may not be named "vbox."</p>
-<p>Once this is done, you may start and stop vboxwebsrv by running:</p>
-<p><em>/etc/init.d/vboxweb-service start</em> <br/>
--or-<br/>
-<em>/etc/init.d/vboxweb-service stop</em> </p>
-<p>as the root user on your system.</p></div>
+<p>Once this is done, you may start and stop vboxwebsrv by running as root user:</p>
+
+<ul><li>If your system use init scripts :</li>
+<div class="codehilite"><pre><span></span>/etc/init.d/vboxweb-service start
+/etc/init.d/vboxweb-service stop</pre></div>
+<li>If your system use systemd as service manager:</li>
+<div class="codehilite"><pre><span></span>systemctl start vboxweb-service.service
+systemctl stop vboxweb-service.service</pre></div>
+</ul>
+</div>
