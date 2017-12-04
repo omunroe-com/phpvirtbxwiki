@@ -82,7 +82,7 @@
 <p>If your web server and your VirtualBox installation are on 2 different hosts, you may need to add:</p>
 <p>-H IP.ADDRESS.OF.HOST</p>
 <p>to the command line of vboxwebsrv. Where IP.ADDRESS.OF.HOST is the IP address of your VirtualBox host, accessible by your web server. If this is not specified, vboxwebsrv will listen on localhost, which is not accessible outside of itself.</p>
-<h3 id="virtualbox-3x-ose-note">VirtualBox 3.x OSE Note (OUTDATED -> move to )</h3>
+<h3 id="virtualbox-3x-ose-note">VirtualBox 3.x OSE Note</h3>
 <p>For <em>VirtualBox 3.x OSE</em> users, you must execute the following command:</p>
 <div class="codehilite"><pre><span></span>   VBoxManage setproperty websrvauthlibrary null
 </pre></div>
