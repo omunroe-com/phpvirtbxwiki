@@ -76,10 +76,10 @@ VBOXWEB_HOST=<em>192.168.0.4</em>
 <p>Note that these values are just examples. The user that runs virtual machines on your system may not be named "vbox."</p>
 <p>Once this is done, you may start and stop vboxwebsrv by running as root user:</p>
 
-<ul><li>If your system use init scripts :</li>
+<ul><li>If you use init scripts :</li>
 <div class="codehilite"><pre><span></span>/etc/init.d/vboxweb-service start
 /etc/init.d/vboxweb-service stop</pre></div>
-<li>If your system use systemd as service manager:</li>
+<li>If you use systemd :</li>
 <div class="codehilite"><pre><span></span>systemctl start vboxweb-service.service
 systemctl stop vboxweb-service.service</pre></div>
 </ul>
