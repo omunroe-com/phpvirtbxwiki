@@ -300,10 +300,3 @@
 <li>Using vi, you may enter the command <em>:set enc=utf-8</em></li>
 </ul>
 <p>Other text editors should have some way to change / set the encoding used.</p></div>
-
-  <div id="create_wiki_page_holder" title="Create New Page" style="display:none">
-    <form>
-        <label class="grid-2">Name</label>
-        <div class="grid-7"><input type="text" name="name"/></div>
-    </form>
-  </div>
