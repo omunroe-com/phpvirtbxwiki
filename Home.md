@@ -172,7 +172,8 @@
 </pre></div>
 
 
-<p>The username and password must be the username and password of the user that vboxwebsrv is running as. If VirtualBox and phpVirtualBox are on the same physical host, you may leave the $location setting alone. Once this is configured:</p>
+<p>The username and password must be the username and password of the user that vboxwebsrv is running as. On Windows and OS X, this simply means the same user that you log into your machine as when you run VirtualBox.</p>
+<p>If VirtualBox and phpVirtualBox are on the same physical host, you may leave the $location setting alone. Once this is configured:</p>
 <ul>
 <li>Navigate to the resulting folder in your web browser. Typically <a href="http://your.web.server.ip/phpvirtualbox" rel="nofollow">http://your.web.server.ip/phpvirtualbox</a></li>
 <li>Default login is admin / admin. See <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Authentication-in-phpVirtualBox">Authentication in phpVirtualBox</a> for more information on controlling users and passwords within phpVirtualBox.</li>
