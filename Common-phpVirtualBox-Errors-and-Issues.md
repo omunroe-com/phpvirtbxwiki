@@ -33,7 +33,7 @@
 <h1 id="error-messages">Error Messages</h1>
 <h2 id="invalid-username-or-password">Invalid username or password</h2>
 <p>The default username / password to use when logging in to phpVirtualBox is admin / admin. <br/>
-See: <a href="https://sourceforge.net/p/phpvirtualbox/wiki/Authentication%20in%20phpVirtualBox/">https://sourceforge.net/p/phpvirtualbox/wiki/Authentication%20in%20phpVirtualBox/</a></p>
+See: <a href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Authentication-in-phpVirtualBox/">https://github.com/phpvirtualbox/phpvirtualbox/wiki/Authentication-in-phpVirtualBox</a></p>
 <p>Some users have reported issues logging in if the PHP engine can't write to its session folder. It is impossible to cover all the possible PHP configurations here, so difficult to give direct guidance. I suggest you google <code>"php failed to write session data"</code> adding your operating system to the search.</p>
 <h2 id="error-logging-in-or-connecting-to-vboxwebsrv">Error logging in or connecting to vboxwebsrv</h2>
 <p><strong>NOTE: This is different than an Invalid username or password error.</strong></p>
@@ -47,7 +47,7 @@ VBoxManage setproperty websrvauthlibrary default
 
 <h2 id="could-not-connect-to-host">Could not connect to host</h2>
 <p>This indicates that phpVirtualBox could not connect to the vboxwebsrv server. Either the <em>location</em> setting in config.php is wrong, <em>vboxwebsrv</em> is not running on the VirtualBox host, or SELinux is blocking access to vboxwebsrv. If you have SELinux enabled, see:</p>
-<p><a href="https://sourceforge.net/p/phpvirtualbox/wiki/Installation/#selinux-considerations">https://sourceforge.net/p/phpvirtualbox/wiki/Installation/#selinux-considerations</a></p>
+<p><a href="https://github.com/phpvirtualbox/phpvirtualbox/wiki#selinux-considerations/">https://github.com/phpvirtualbox/phpvirtualbox/wiki#selinux-considerations</a></p>
 <h2 id="looks-like-we-got-no-xml-document">looks like we got no XML document</h2>
 <p>This message occurs when the $location setting in config.php is incorrect. The most common cause is that it is set to the location of phpVirtualBox rather than the SOAP URL of vboxwebsrv.</p>
 <p>There are 2 locations involved. One is the URL that phpVirtualBox is accessible through, and the other is the URL through which phpVirtualBox communicates with vboxwebsrv. The $location setting in config.php needs to be set to the URL to vboxwebsrv.</p>
