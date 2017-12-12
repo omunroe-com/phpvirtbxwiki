@@ -1,5 +1,5 @@
 <div class="markdown_content"><p><strong>Introduction</strong></p>
-<p>*NOTE: This covers authentication within the phpVirtualBox application. If you are getting an error message that states "Error logging in to vboxwebsrv," please see the <a class="" href="https://sourceforge.net/p/phpvirtualbox/wiki/Common%20phpVirtualBox%20Errors%20and%20Issues/#error-logging-in-or-connecting-to-vboxwebsrv">Common Errors and Issues</a> wiki.</p>
+<p>*NOTE: This covers authentication within the phpVirtualBox application. If you are getting an error message that states "Error logging in to vboxwebsrv," please see the <a class="" href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Common-phpVirtualBox-Errors-and-Issues#error-logging-in-or-connecting-to-vboxwebsrv">Common Errors and Issues</a> wiki.</p>
 <p>Authentication was introduced in phpVirtualBox 4.0-4. If you are using an older version, these features will not be available.</p>
 <hr/>
 <p><strong>Contents</strong></p>
