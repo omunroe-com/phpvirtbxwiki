@@ -18,7 +18,7 @@
 </div>
 <hr/>
 <h2 id="windows">Windows</h2>
-<p>On Windows, instead of mucking around with IIS, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="../http%3A//www.apachefriends.org/">[http://www.apachefriends.org/]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
+<p>On Windows, instead of mucking around with IIS, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="https://www.apachefriends.org">[www.apachefriends.org]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
 <p>After installation, launch the XAMPP control panel and click Start next to Apache. You can copy phpVirtualBox to XAMPP's htdocs folder. Typically C:\xampp\htdocs or C:\xampplite\htdocs.</p>
 <h2 id="linux">Linux</h2>
 <p>The details of installing a web server and PHP differ greatly from distribution to distribution. In most cases, you simply have to install apache2 and the apache2 php module (&gt;=5.1.0) using your distribution's package management system. Please follow the instructions for your Linux distribution as provided by the distribution maintainer(s).</p>
@@ -84,10 +84,10 @@ a2enmod mpm_prefork php7.X</pre></div>
 
 
 <h2 id="os-x">OS X</h2>
-<p>On OS X, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="../http%3A//www.apachefriends.org/">[http://www.apachefriends.org/]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
+<p>On OS X, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="https://www.apachefriends.org">[www.apachefriends.org]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
 <p>After installation, launch the XAMPP control panel and click Start next to Apache. You can copy phpVirtualBox to XAMPP's htdocs folder. Typically /Applications/XAMPP/htdocs/.</p>
 <h2 id="solaris">Solaris</h2>
-<p>On Solaris, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="../http%3A//www.apachefriends.org/">[http://www.apachefriends.org/]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
+<p>On Solaris, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="https://www.apachefriends.org">[www.apachefriends.org]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
 <p>(Assuming you kept the default installation path) After installation, run the following command as root:</p>
 <div class="codehilite"><pre><span></span>  /opt/xampp/xampp startapache
 </pre></div>
