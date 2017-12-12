@@ -19,7 +19,11 @@
 <hr/>
 <h2 id="windows">Windows</h2>
 <p>On Windows, instead of mucking around with IIS, you may install XAMPP or XAMPPLite from <a class="alink notfound" href="https://www.apachefriends.org">[www.apachefriends.org]</a>. The installation is very straight-forward and includes a recent version of PHP (certainly greater than 5.1.0).</p>
-<p>After installation, launch the XAMPP control panel and click Start next to Apache. You can copy phpVirtualBox to XAMPP's htdocs folder. Typically C:\xampp\htdocs or C:\xampplite\htdocs.</p>
+<p>After installation, launch the XAMPP control panel and click "Config" next to Apache, then "PHP (php.ini)". It will open the php configuration file "php.ini" in notepad.</p>
+<p>Uncomment the following line (E.G. remove the ";") and close the file after having saved the changes.</p>
+<div class="codehilite"><pre><span></span>;extension=php_soap.dll</pre></div>
+<p>In the XAMPP control panel, click "Start" next to Apache.</p>
+<p> You can copy phpVirtualBox to XAMPP's htdocs folder. Typically C:\xampp\htdocs or C:\xampplite\htdocs.</p>
 <h2 id="linux">Linux</h2>
 <p>The details of installing a web server and PHP differ greatly from distribution to distribution. In most cases, you simply have to install apache2 and the apache2 php module (&gt;=5.1.0) using your distribution's package management system. Please follow the instructions for your Linux distribution as provided by the distribution maintainer(s).</p>
 <p>The following gives basic instructions for common Linux distributions, without any warranty. </p>
