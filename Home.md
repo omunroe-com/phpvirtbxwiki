@@ -19,6 +19,7 @@
 <li><a href="#installing-phpvirtualbox">Installing phpVirtualBox</a><ul>
 <li><a href="#download-and-installation">Download and Installation</a><ul>
 <li><a href="#freebsd-note">FreeBSD Note</a></li>
+<li><a href="#archlinux-note">Arch Linux Note</a></li>
 <li><a href="#selinux-considerations">SELinux Considerations</a></li>
 </ul>
 </li>
@@ -149,6 +150,13 @@
 
 <p>Note that, as of December 2017, the FreeBSD port is forked from the release 5.0-5 of phpvirtualbox, waiting for a new upstream release.</p>
 
+<h4 id="archlinux-note">ArchLinux Note</h4>
+<p>Thanks to Sergej Pupykin for his time and effort in maintaining the Arch Linux package in the Community repository.</p>
+<p>To install the package:</p>
+<div class="codehilite"><pre><span></span>pacman -S phpvirtualbox</pre></div>
+
+
+<p>Note that, as of December 2017, the Arch Linux package is based on the github tag 5.2-0-rc1.</p>
 
 <h4 id="selinux-considerations">SELinux Considerations</h4>
 <p>If SELinux is installed and you would like to keep it enabled, you may have to add a rule for vboxwebsrv.</p>
