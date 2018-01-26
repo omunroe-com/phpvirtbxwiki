@@ -59,7 +59,7 @@ SETTING2=value
 </tbody>
 </table>
 <p>At a minimum, <em>VBOXWEB_USER</em> and <em>VBOXWEB_HOST</em> must be set.</p>
-<p>VBOXWEB_USER should be set to the user that runs VirtualBox virtual machines on your system. If more than one user runs virtual machines, you will have to pick one (multiple instances are possible, but beyond the scope of this document).</p>
+<p>VBOXWEB_USER should be set to the user that runs VirtualBox virtual machines on your system. If more than one user runs virtual machines, you will have to pick one (multiple instances are possible, but beyond the scope of this document). <B>DON'T USE THE ROOT USER, vboxwebsrv WON'T ACCEPT ANY CONNECTION</B>.</p>
 <p>VBOXWEB_HOST should, in most cases, be set to <em>127.0.0.1</em>. If phpVirtualBox (your web server) is not running on the same host as vboxwebsrv and phpVirtualBox must communicate with vboxwebsrv over a network, this must be set to the external IP address of the host runing vboxwebsrv.</p>
 <p>Your <em>/etc/default/virtualbox</em> may look like this:</p>
 <div class="codehilite"><pre><span></span>VBOXWEB_USER=vbox
