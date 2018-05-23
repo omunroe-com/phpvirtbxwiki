@@ -38,6 +38,8 @@ See: <a href="https://github.com/phpvirtualbox/phpvirtualbox/wiki/Authentication
 <h2 id="error-logging-in-or-connecting-to-vboxwebsrv">Error logging in or connecting to vboxwebsrv</h2>
 <p><strong>NOTE: This is different than an Invalid username or password error.</strong></p>
 <p>This typically indicates that the username and / or password is incorrect in config.php. These must be set to the system username / password of the user that administers your VirtualBox virtual machines.</p>
+<p>Also, check to make sure that your vboxwebsrv is running and taking requests:<p>
+<div class="codehilite"><pre><span></span>sudo netstat -tulpena | grep 18083</div>
 <p><strong>If you have upgraded from VirtualBox 3.2.x and this was working before</strong>, you may have to run the following commands on your VirtualBox host:</p>
 <div class="codehilite"><pre><span></span>VBoxManage setproperty vrdeauthlibrary default
 
