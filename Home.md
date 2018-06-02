@@ -156,7 +156,7 @@
 <div class="codehilite"><pre><span></span>pacman -S phpvirtualbox</pre></div>
 
 
-<p>Note that, as of December 2017, the Arch Linux package is based on the github tag 5.2-0-rc1.</p>
+<p>Note that, as of March 2018, the Arch Linux package is based on the github tag 5.2-0.</p>
 
 <h4 id="selinux-considerations">SELinux Considerations</h4>
 <p>If SELinux is installed and you would like to keep it enabled, you may have to add a rule for vboxwebsrv.</p>
