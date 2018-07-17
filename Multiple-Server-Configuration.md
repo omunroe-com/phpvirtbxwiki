@@ -76,7 +76,6 @@
                 'consoleHost' =&gt; '10.32.32.4',
                 'noPreview' =&gt; true,
                 'browserRestrictFolders' =&gt; array('/home/vbox','/mnt/media')
-
     ),
     array(
         'name' =&gt; 'New York',
