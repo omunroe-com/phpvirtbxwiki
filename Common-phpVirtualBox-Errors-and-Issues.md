@@ -107,6 +107,16 @@ VBoxManage setproperty websrvauthlibrary default
 </ul>
 <h2 id="preview-box-is-black-and-vm-is-running-saved">Preview Box is Black and VM is running / saved</h2>
 <p>The power or screen saver settings of the guest OS in the virtual machine is probably set to turn off the monitor or display a blank screen after a period of inactivity. Change this setting in the guest operating system of the virtual machine.</p>
+
+<h2 id="phpvirtualbox-and-systemd-for-vm-manage-at-boot-and-shutdown">Use of systemd to start and stop vm and phpvirtualbox coexistence</h2>
+<p>If you use systemd script to start and stop vm, in your script_name.service you need to use </p>
+<div class="codehilite"><pre><span>sudo -u vboxuser /usr/bin/VBoxHeadless ...</span></div>
+<p>instead to specify user and group as follow</p>
+<div class="codehilite"><pre><span>[Service]
+User=vboxuser
+Group=vboxuser
+</span></div>
+<p>otherwise you risk to receive connection error.</p>
 <h2 id="2d-3d-acceleration-options-do-not-exist">2D / 3D acceleration options do not exist</h2>
 <p>These options have no effect in a headless environment (console via VRDE) and so are not displayed.</p>
 <h1 id="my-error-message-or-issue-is-not-covered-here">My error message or issue is not covered here</h1>
