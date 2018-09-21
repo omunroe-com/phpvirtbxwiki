@@ -23,6 +23,7 @@
 <li><a href="#vboxwebsrv-stops-after-some-time">vboxwebsrv stops after some time</a></li>
 <li><a href="#memory-usage-of-vboxwebsrv-grows-constantly">memory usage of vboxwebsrv grows constantly</a></li>
 <li><a href="#preview-box-is-black-and-vm-is-running-saved">Preview Box is Black and VM is running / saved</a></li>
+<li><a href="#phpvirtualbox-and-systemd-for-vm-manage-at-boot-and-shutdown">Use of systemd to start and stop vm and phpvirtualbox coexistence</a></li>
 <li><a href="#2d-3d-acceleration-options-do-not-exist">2D / 3D acceleration options do not exist</a></li>
 </ul>
 </li>
