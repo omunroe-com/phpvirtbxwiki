@@ -117,6 +117,7 @@ VBoxManage setproperty websrvauthlibrary default
 User=vboxuser
 Group=vboxuser
 </span></div>
+<p>Also add httpd.service to After parameter into script_name.service.</p>
 <p>You should also start and stop vm only from systemd otherwise you risk to receive connection error.</p>
 <div class="codehilite"><pre><span># systemctl [start/stop/restart] script_name.service</span></div>
 </p>otherwise you risk to receive connection error.</p>
