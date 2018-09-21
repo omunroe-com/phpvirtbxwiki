@@ -117,7 +117,9 @@ VBoxManage setproperty websrvauthlibrary default
 User=vboxuser
 Group=vboxuser
 </span></div>
-<p>otherwise you risk to receive connection error.</p>
+<p>You should also start and stop vm only from systemd otherwise you risk to receive connection error.</p>
+<div class="codehilite"><pre><span># systemctl [start/stop/restart] script_name.service</span></div>
+</p>otherwise you risk to receive connection error.</p>
 <h2 id="2d-3d-acceleration-options-do-not-exist">2D / 3D acceleration options do not exist</h2>
 <p>These options have no effect in a headless environment (console via VRDE) and so are not displayed.</p>
 <h1 id="my-error-message-or-issue-is-not-covered-here">My error message or issue is not covered here</h1>
