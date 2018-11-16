@@ -1,7 +1,7 @@
 <div class="markdown_content"><p><strong>Introduction</strong></p>
 <p>phpVirtualBox comes with authentication that allow it to use custom authentication mechanisms. This page lists each authentication module, how to enable it, and its settings.</p>
 <hr/>
-<p>Contents</p>
+<p><strong>Contents</strong></p>
 <div class="toc">
 <ul>
 <li><a href="#webauth">WebAuth</a></li>
@@ -41,7 +41,7 @@ var $authConfig = array(
 
 <p>Set the values in the $authConfig in accordance with your LDAP environment. Contact your LDAP administrator for help with setting these values.</p>
 
-<p>The host parameter can be an IP address (as in the example above), a DNS name, such as ldap or ldap.your.domain, or an LDAP/LDAPS URI, such as ldap://ldap.your.domain, ldaps://ldap.your.domain, or ldap://ldap.your.domain/????starttls</p>
+<p>The host parameter can be an IP address (as in the example above), a DNS name, such as ldap or ldap.your.domain, or an LDAP/LDAPS URI, such as ldap://ldap.your.domain, ldaps://ldap.your.domain, or ldap://ldap.your.domain/????starttls.</p>
 </div>
 
 <h1 id="active-directory-42-x-only">Active Directory (&ge; 4.2-x only)</h1>
