@@ -44,7 +44,7 @@ var $authConfig = array(
 <p>The host parameter can be an IP address (as in the example above), a DNS name, such as ldap or ldap.your.domain, or an LDAP/LDAPS URI, such as ldap://ldap.your.domain, ldaps://ldap.your.domain, or ldap://ldap.your.domain/????starttls</p>
 </div>
 
-<h1 id="active-directory-42-x-only">Active Directory (&gt;= 4.2-x only)</h1>
+<h1 id="active-directory-42-x-only">Active Directory (&ge; 4.2-x only)</h1>
 <p>The Active Directory authentication module allows phpVirtualBox to authenticate users against an Active Directory domain controller. It is similar to the LDAP authentication, using LDAP to connect to the domain controller, but allows groups to be used to specify users and administrators.</p>
 
 <h2 id="basic-setup">Basic setup</h2>
@@ -108,7 +108,7 @@ var $authConfig = array(
 
 
 <p>In this scenario, the organization unit <em>Engineering\Admins</em> is searched for users.</p>
-<p><img src="https://phpvirtualbox.github.io/images/adou.png"/></p>
+<p><img src="https://phpvirtualbox.github.io/images/adou.png" alt=""/></p>
 
 <h2 id="examples">Examples</h2>
 <p>You can mix-and-match the container, admin_group, adminUser, and user_group in your configuration. It is important to remember:</p>
