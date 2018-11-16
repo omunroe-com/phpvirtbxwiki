@@ -33,7 +33,7 @@
 <p>The LDAP authentication module provides a simple mechanism to authenticate against an LDAP server. To enable this authentication method, add the following to config.php:</p>
 <div class="codehilite"><pre><span></span>var $authLib = 'LDAP';
 var $authConfig = array(
-   'host' =&gt; '127.0.0.1', // LDAP server IP
+   'host' =&gt; '127.0.0.1', // LDAP server
    'bind_dn' =&gt; 'uid=%s, ou=admins, dc=internal, dc=local', // %s will be replaced with login username
    'adminUser' =&gt; '' // leave blank to let all users be admins in phpVirtualBox or specify a username
 );
@@ -45,7 +45,7 @@ var $authConfig = array(
 <p>The Active Directory authentication module allows phpVirtualBox to authenticate users against an Active Directory domain controller. For a very basic setup, add the following to config.php:</p>
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -58,7 +58,7 @@ var $authConfig = array(
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
    'user_group' =&gt; 'Development Lab',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -70,7 +70,7 @@ var $authConfig = array(
 var $authConfig = array(
    'adminUser' =&gt; 'bob',
    'user_group' =&gt; 'Development Lab',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -82,7 +82,7 @@ var $authConfig = array(
 var $authConfig = array(
    'admin_group' =&gt; 'Domain Admins',
    'user_group' =&gt; 'Development Lab',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -94,7 +94,7 @@ var $authConfig = array(
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
    'container' =&gt; 'OU=Admins, OU=Engineering',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -113,7 +113,7 @@ var $authConfig = array(
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
    'admin_user' =&gt; 'james',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -125,7 +125,7 @@ var $authConfig = array(
 var $authConfig = array(
    'user_group' =&gt; 'Dev Lab',
    'admin_user' =&gt; 'susan'
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -136,7 +136,7 @@ var $authConfig = array(
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
    'admin_group' =&gt; 'vbox admins',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -148,7 +148,7 @@ var $authConfig = array(
 var $authConfig = array(
    'user_group' =&gt; 'Dev Lab Users',
    'admin_group' =&gt; 'Dev Lab Admins',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -158,7 +158,7 @@ var $authConfig = array(
 <hr/>
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
@@ -170,7 +170,7 @@ var $authConfig = array(
 var $authConfig = array(
    'container' =&gt; 'OU=Admins, OU=Engineering',
    'adminUser' =&gt; 'jason',
-   'host' =&gt; '192.168.1.100', // domain controller IP
+   'host' =&gt; '192.168.1.100', // domain controller
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
