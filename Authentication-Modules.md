@@ -6,12 +6,12 @@
 <ul>
 <li><a href="#webauth">WebAuth</a></li>
 <li><a href="#ldap">LDAP</a></li>
-<li><a href="#active-directory-42-x-only">Active Directory (&gt;= 4.2-x only)</a><ul>
-<li><a href="#restricting-access">Restricting Access</a><ul>
+<li><a href="#active-directory-42-x-only">Active Directory (&ge; 4.2-x only)</a>
+<ul>
+<li><a href="#basic-setup">Basic setup</a></li>
+<li><a href="#restricting-access">Restricting Access</a></li>
 <li><a href="#containers">Containers</a></li>
-<li><a href="#summary">Summary</a></li>
-</ul>
-</li>
+<li><a href="#examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -37,12 +37,19 @@ var $authConfig = array(
    'bind_dn' =&gt; 'uid=%s, ou=admins, dc=internal, dc=local', // %s will be replaced with login username
    'adminUser' =&gt; '' // leave blank to let all users be admins in phpVirtualBox or specify a username
 );
-</pre></div>
+</pre>
 
+<p>Set the values in the $authConfig in accordance with your LDAP environment. Contact your LDAP administrator for help with setting these values.</p>
 
-<p>Where values in the $authConfig array are appropriately set according to your LDAP environment. Contact your LDAP administrator for help with setting these values.</p>
+<p>The host parameter can be an IP address (as in the example above), a DNS name, such as ldap or ldap.your.domain, or an LDAP/LDAPS URI, such as ldap://ldap.your.domain, ldaps://ldap.your.domain, or ldap://ldap.your.domain/????starttls</p>
+</div>
+
 <h1 id="active-directory-42-x-only">Active Directory (&gt;= 4.2-x only)</h1>
-<p>The Active Directory authentication module allows phpVirtualBox to authenticate users against an Active Directory domain controller. For a very basic setup, add the following to config.php:</p>
+<p>The Active Directory authentication module allows phpVirtualBox to authenticate users against an Active Directory domain controller. It is similar to the LDAP authentication, using LDAP to connect to the domain controller, but allows groups to be used to specify users and administrators.</p>
+
+<h2 id="basic-setup">Basic setup</h2>
+
+<p>For a very basic setup, add the following to config.php:</p>
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
    'host' =&gt; '192.168.1.100', // domain controller
@@ -50,9 +57,10 @@ var $authConfig = array(
 );
 </pre></div>
 
-
 <p>This configuration allows everyone in your Active Directory environment to log in and makes them all administrators in phpVirtualBox.</p>
+
 <p>Each Active Directory implementation can provide varying levels of complexity. This authentication module aims to be flexible enough for any environment, but its configuration can be equally complex.</p>
+
 <h2 id="restricting-access">Restricting Access</h2>
 <p>The $authConfig items 'user_group' and 'admin_group' allow one to restrict access to phpVirtualBox. If user_group is set, only users that are members of this group (or an admin_group) will be able to log in. This can be specified in $authConfig in config.php as:</p>
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
@@ -62,7 +70,6 @@ var $authConfig = array(
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
-
 
 <p>In this scenario, only users that are a member of the 'Development Lab' group can log in. Since no admin information is specified, all users would be admins in phpVirtualBox.</p>
 <p>There are 2 mechanisms to specify one or more users as admins in phpVirtualBox. You can explicitly set one user to be an admin by setting the 'adminUser' item:</p>
@@ -89,7 +96,7 @@ var $authConfig = array(
 
 
 <p>In this scenario, only users that are a member of the 'Development Lab' or 'Domain Admins' groups can log in. Only users in the 'Domain Admins' group are admins in phpVirtualBox.</p>
-<h3 id="containers">Containers</h3>
+<h2 id="containers">Containers</h2>
 <p>The default container searched is <em>CN=Users</em>. This is the "Users" folder in your Active Directory domain. To change the default container searched, you can specify the 'container' item in your $authConfig array:</p>
 <div class="codehilite"><pre><span></span>var $authLib = 'ActiveDirectory';
 var $authConfig = array(
@@ -102,7 +109,8 @@ var $authConfig = array(
 
 <p>In this scenario, the organization unit <em>Engineering\Admins</em> is searched for users.</p>
 <p><img src="https://phpvirtualbox.github.io/images/adou.png"/></p>
-<h3 id="summary">Summary</h3>
+
+<h2 id="examples">Examples</h2>
 <p>You can mix-and-match the container, admin_group, adminUser, and user_group in your configuration. It is important to remember:</p>
 <ul>
 <li>If no admin information is specified (via adminUser or admin_group), all users that can log in to phpVirtualBox will be administrators</li>
@@ -117,7 +125,6 @@ var $authConfig = array(
    'domain' =&gt; 'adtest.local' // active directory domain
 );
 </pre></div>
-
 
 <p>Anyone with an AD account can log in. Only 'james' is an admin in phpvirtualbox.</p>
 <hr/>
